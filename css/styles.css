@@ -8,12 +8,27 @@
     --color-text: #18191F;
 }
 
+body{
+    font-family: 'Manrope', sans-serif;
+    overflow-y: overlay;
+}
+
+body::-webkit-scrollbar{
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #D2D2D2;
+    border-radius: 5px;
+}
 
 .header{
     position: sticky;
     top: 0;
     padding: 20px 165px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 900;
+    background: #fff;
 }
 
 .header nav {
@@ -23,6 +38,7 @@
     justify-content: space-between;
     width: 100%;
     height: 50px;
+    z-index: 900;
 }
 
 .header .container-btn__menu{
@@ -113,16 +129,205 @@
     color: #616572;
 }
 
+/* <<---------------------------- menu desplegable --------------------------------->> */
+
+aside .screen-menu__open{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #50505085;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    
+    transition: all .3s ease-out;
+}
+
+aside .container-menu{
+    z-index: 1002;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 370px;
+    height: 100%;
+    background-color: #fff;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: all .2s ease-in-out;
+}
+
+.container-menu .btn-folded{
+    position: absolute;
+    right: 30px;
+    top: 31px;
+    cursor: pointer;
+
+    transition: all .1s ease-in;
+}
+
+.container-menu .btn-folded:hover{
+    right: 35px;
+}
+
+.btn-folded i{
+    color: #969BAB;
+    font-size: 31px;
+}
+
+.container-menu .header-menu{
+    display: flex;
+    align-items: flex-end;
+    padding-left: 27px;
+    height: 146px;
+} 
+
+.header-menu h3{
+    font-size: 28px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.container-menu .menu-link-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 27px;
+    padding: 52px 0px 0px 27px;
+}
+
+.menu-link-section .link-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--color-text);
+    transition: all .1s ease-in;
+}
+
+.menu-link-section .link-section:hover{
+    transform: translateX(8px);
+}
+
+.link-section .icon i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.link-section h3{
+    margin: auto;
+}
+
+.link-section h3::first-child{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--color-text);
+}
+
+.link-section h3:last-child{
+    color: var(--color-icon-header);
+}
+
+.container-menu.unfolded{
+    transform: translateX(-100%);
+}
+
+.screen-menu__open.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container-menu:hover{
+    overflow-y: overlay;
+}
+
+.container-menu::-webkit-scrollbar{
+    width: 8px;
+}
+
+.container-menu::-webkit-scrollbar-thumb{
+    background-color: #D2D2D2;
+    border-radius: 5px;
+}
 
 
+/* <<---------------------------- section 1 --------------------------------->> */
 
 
+section .container-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 165px;
+    margin: auto;
+}
 
+.container-section .container-titles{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
 
+.container-titles h3,
+.container-titles h2{
+    font-family: 'Manrope', sans-serif;
+    margin: auto;
+}
 
+.container--titles h2{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 40px;
+}
 
+.container-titles h3{
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 800;
+}
 
+.container-section .reloj{
+   font-size: 7em;
+   font-weight: 200;
+   /* line-height: 98px; */
+   margin: .7em 5px;
+}
 
+.container-section .container-btn__clock{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 37px;
+    padding: 0;
+}
+
+.container-btn__clock button{
+    width: 200px;
+    height: 68px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color-azul);
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+
+    box-shadow: 0px 2px 4px rgba(136, 144, 194, 0.2), 0px 5px 15px rgba(37, 44, 97, 0.15);
+    transition: all .05s ease-in;
+
+}
+
+.container-btn__clock button:hover,
+.container-btn__clock button:focus{
+    background-color: #45e2eb;
+}
 
 
 
