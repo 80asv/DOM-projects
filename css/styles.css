@@ -329,7 +329,21 @@ section .container-section{
     background-color: #45e2eb;
 }
 
+.container-clock{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
 
+.container-clock p.pause{
+    margin-bottom: 5.5em;
+    font-size: 30px;
+    font-weight: 800;
+    color: #eb3a3a;
+}
 
-
+p.pause.hidden{
+    visibility: hidden;
+    opacity: 0;
+}
 
