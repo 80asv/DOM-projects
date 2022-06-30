@@ -28,22 +28,26 @@ body::-webkit-scrollbar-thumb{
 }
 
 .header{
-    position: sticky;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 72px;
     top: 0;
-    padding: 20px 165px;
+    /* padding: 20px 165px; */
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     z-index: 900;
     background: #fff;
 }
 
 .header nav {
+    width: 100%;
+    padding: 0 165px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    height: 50px;
-    z-index: 900;
 }
 
 .header .container-btn__menu{
@@ -305,7 +309,7 @@ section .container-section{
     margin: auto;
 }
 
-.container--titles h2{
+.container-titles h2{
     font-size: 28px;
     font-weight: 700;
     line-height: 40px;
@@ -331,6 +335,7 @@ section .container-section{
     align-items: center;
     gap: 37px;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 .container-btn__clock button{
@@ -346,6 +351,7 @@ section .container-section{
 
     box-shadow: 0px 2px 4px rgba(136, 144, 194, 0.2), 0px 5px 15px rgba(37, 44, 97, 0.15);
     transition: all .05s ease-in;
+    flex-grow: 1;
 
 }
 
@@ -358,6 +364,8 @@ section .container-section{
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container-clock p.pause{
@@ -453,6 +461,12 @@ p.pause.hidden{
     display: flex;
     flex-direction: row;
     gap: 16px;
+    flex-wrap: wrap;
+}
+
+.cont-btn__bottom input[type="text"],
+.cont-btn__bottom button{
+    flex-grow: 1;
 }
 
 .container-buttons button{
@@ -524,3 +538,188 @@ p.pause.hidden{
     font-size: 48px;
     color: var(--color-naranja);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* <<------------------- responsive design -------------------->> */
+
+
+@media screen and (max-width: 900px){
+    section .container-section{
+        padding: 5em 1em;
+    }
+
+    /* <<---------------- header --------------------> */
+    .header{
+        top: 0;
+        /* padding: 20px 20px; */
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background: #fff;
+        height: 65px;
+    }
+
+    .header nav {
+        padding: 0 1em;
+        justify-content: space-between;
+        
+    }
+
+
+    .container-btn__menu .left-nav-items{
+        display: none;
+    } 
+
+
+    .header .social-links{
+       display: none;
+   }
+
+   .container-btn__menu .container-logo {
+        width: 2em; height: 2em;
+   }
+
+   .container-btn__menu .container-logo i{
+       font-size: 25px;
+   }
+
+   .header .logotype{
+       margin-right: 0;
+       gap: 5px;
+   }
+   .header .logotype .logo-svg i{
+       font-size: 25px;
+
+   }
+
+
+    /* <<---------------- lateral menu --------------------> */
+
+   
+    aside .container-menu{
+        width: 16rem;
+    }
+
+    .header-menu h3{
+        font-size: 23px;
+    }
+
+    .container-menu .menu-link-section{
+        padding: 15px 0 0 27px;
+        gap: 20px;
+    }
+
+    .link-section h3{
+        font-size: 12px;
+    }
+
+    .link-section .icon i{
+        font-size: 20px;
+    }
+
+    .btn-folded i{
+        font-size: 24px;
+    }
+
+
+    /* <<---------------- section 1 --------------------> */
+
+    .container-section .container-titles{
+        gap: 5px;
+    }
+
+    .container-titles h3{
+        font-size: 1.8em;
+        line-height: 18px;
+    }
+
+    .container-titles h2{
+        font-size: 18px;
+    }
+
+    .container-clock{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 10px;
+    }
+
+    .container-section .reloj{
+        font-size: 3em;
+        margin-bottom: 5px;
+    }
+   
+    .container-clock p.pause{
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+
+    .container-btn__clock button{
+        width: 146px;
+        height: 46px;
+        font-size: 15px;
+        flex-grow: 0;
+    }
+
+    .container-section .container-btn__clock{
+        gap: 15px;
+    }
+
+
+    /* <<---------------- section 3 --------------------> */
+
+    .container-buttons input[type="date"]{
+        width: 160px;
+        height: 32px;
+        font-size: 15px;
+    }
+
+    .cont-btn__bottom input[type="text"]{
+        width: 100%;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    .container-buttons button{
+        width: 75px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .container-countdown{
+        flex-wrap:wrap;
+        margin-bottom: 40px;
+        row-gap: 10px;
+    }
+
+    .container-countdown .box{
+        width: 90px;
+        height: 125px;
+    }
+
+    .container-title-countdown .title-countdown{
+        font-size: 25px;
+    }
+
+    .container-countdown .box span:first-child{
+        font-size: 45px;
+    }
+
+    .container-countdown .box span:last-child{
+        font-size: 14px;
+    }
+}
+
+
