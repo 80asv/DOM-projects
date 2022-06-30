@@ -9,6 +9,10 @@
     --color-text: #18191F;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Manrope', sans-serif;
     overflow-y: overlay;
@@ -50,12 +54,31 @@ body::-webkit-scrollbar-thumb{
 }
 
 .container-btn__menu .container-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+    transition: all .03s ease-in;
 }
+
+.container-btn__menu .container-logo:hover{
+    background-color: var(--color-icon-header-bg);
+}
+
+
 
 .container-btn__menu .container-logo i{
    color: var(--color-naranja) ;
    font-size: 30px;
+   transition: all .1s ease 0s;
+}
+
+.container-btn__menu .container-logo:hover i{
+    color: var(--color-icon-header);
 }
 
 .container-btn__menu .left-nav-items{
@@ -71,7 +94,7 @@ body::-webkit-scrollbar-thumb{
     text-decoration: none;
     color: var(--color-text);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     font-family: 'Manrope', sans-serif;
 }
 
@@ -82,6 +105,7 @@ body::-webkit-scrollbar-thumb{
      align-items: center;
      justify-content: space-between;
      gap: 10px;
+     margin-right: 118px;
 } 
 
 .logotype .logo-svg i{
@@ -133,7 +157,7 @@ body::-webkit-scrollbar-thumb{
 /* <<---------------------------- menu desplegable --------------------------------->> */
 
 aside .screen-menu__open{
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     background-color: #50505085;
@@ -146,7 +170,7 @@ aside .screen-menu__open{
 
 aside .container-menu{
     z-index: 1002;
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
     width: 370px;
@@ -373,9 +397,130 @@ p.pause.hidden{
 
 
 
+/* <<---------------------------- section 3 --------------------------------->> */
+
+#section3 .container-buttons{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+} 
+
+.container-buttons input[type="date"]{
+    width: 175px;
+    height: 35px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: var(--color-icon-header);
+    box-shadow: 0px 2px 4px rgba(136, 144, 194, 0.2), 0px 5px 15px rgba(37, 44, 97, 0.15);
+    outline: none;
+}
 
 
+.container-buttons input[type="date"]::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.container-buttons input[type="text"]{
+    width: 417px;
+    height: 54px;
+    padding-left: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 100%;
+    border: none;
+    background-color: #EEEFF4;
+    outline: none;
+    border-radius: 5px;
+
+    transform: all .1s ease;
+}
+
+.container-buttons input[type="text"]:focus{
+    border-left: 3px solid var(--color-naranja);
+    border-right: 3px solid var(--color-naranja);
+}
+
+.container-buttons .cont-btn__bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.container-buttons button{
+    width: 158px;
+    height: 54px;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(136, 144, 194, 0.2), 0px 5px 15px rgba(37, 44, 97, 0.15);
+    transition: all .05s ease-in;
+}
+
+.container-buttons button.iniciar{
+    background-color: var(--color-azul);
+    color: #fff;
+
+}
+.container-buttons button.iniciar:hover{
+    background-color: #45e2eb;
+}
+
+.container-buttons button.reiniciar{
+    background-color: #D5FAFC;
+    color: var(--color-text);
+}
 
 
+.container-buttons button.reiniciar:hover{
+    background-color: #9afaff;
+}
 
 
+/* <<------ countdown -------->> */
+
+.container-countdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 3em 0;
+}
+
+.container-countdown .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 40px; */
+    width: 183px;
+    height: 197px;
+} 
+
+.container-countdown .box span:first-child{
+    font-weight: 800;
+    font-size: 72px;
+    color: var(--color-text);
+}
+
+.container-countdown .box span:last-child{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.container-title-countdown .title-countdown{
+    font-weight: 900;
+    font-size: 48px;
+    color: var(--color-naranja);
+}

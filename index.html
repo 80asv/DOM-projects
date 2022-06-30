@@ -14,7 +14,8 @@
       <nav>
         <div class="container-btn__menu">
                 <div class="container-logo">
-                    <i class="fa-solid fa-bars-staggered"></i>
+                    <!-- <i class="fa-solid fa-bars-staggered"></i> -->
+                    <i class="fa-solid fa-bars"></i>
                 </div>
                 
                 <div class="left-nav-items">
@@ -47,20 +48,20 @@
 
             <div class="menu-link-section">
 
-                <a href="#" class="link-section" id="digital-clock">
+                <a href="#section1" class="link-section" id="digital-clock">
                     <div class="icon icon-clock"><i class="fa-solid fa-clock"></i></div>
                     <h3>Digital Clock /</h3>
                     <h3>section 1</h3>
                 </a>
 
-                <a href="#" class="link-section" id="keyboard-events">
+                <a href="#section2" class="link-section" id="keyboard-events">
                     <div class="icon icon-keyboard"><i class="fa-solid fa-keyboard"></i></div>
                     <h3>Keyboard event /</h3>
                     <h3>section 2</h3>
                 </a>
 
 
-                <a href="#" class="link-section" id="countdown">
+                <a href="#section3" class="link-section" id="countdown">
                     <div class="icon icon-cuntdown"><i class="fa-solid fa-stopwatch-20"></i></div>
                     <h3>Countdown /</h3>
                     <h3>section 3</h3>
@@ -96,6 +97,51 @@
             <div class="stage">
                 <div class="ball"></div>
             </div>
+        </div>
+    </section>
+
+    <section class="section" id="section3">
+        <div class="container-section">
+            <div class="container-titles">
+                <h2 class="number-section">section 3</h2>
+                <h3 class="title-section">Countdown</h3>
+            </div>
+
+            <div class="container-buttons">
+                <input class="input-date" type="date"> 
+                <div class="cont-btn__bottom">
+                    <input class="input-title" type="text" placeholder="Ingresa un titulo" spellcheck="false">
+                    <button class="btn-date iniciar">INICIAR</button> 
+                    <button class="btn-date reiniciar">REINICIAR</button>
+                </div>
+            </div>
+
+            <div class="container-countdown">
+                <div class="box container-days">
+                    <span class="days">00</span>
+                    <span class="text-days">DAYS</span>
+                </div>
+
+                <div class="box container-hours">
+                    <span class="hours">00</span>
+                    <span class="text-hours">HOURS</span>
+                </div>
+                
+                <div class="box container-minutes">
+                    <span class="minutes">00</span>
+                    <span class="text-minutes">MINUTES</span>
+                </div>           
+
+                <div class="box container-seconds">
+                    <span class="seconds">00</span>
+                    <span class="text-seconds">SECONDS</span>
+                </div>       
+            </div>   
+
+            <div class="container-title-countdown">
+                <span class="title-countdown">TITLE COUNTDOWN</span>
+            </div>
+
         </div>
     </section>
     <script src="js/main.js" type="module"></script>
