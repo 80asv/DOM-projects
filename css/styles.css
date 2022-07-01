@@ -521,10 +521,13 @@ p.pause.hidden{
     height: 197px;
 } 
 
+.box > span{
+    color: rgb(203 203 203);
+}
+
 .container-countdown .box span:first-child{
     font-weight: 800;
     font-size: 72px;
-    color: var(--color-text);
 }
 
 .container-countdown .box span:last-child{
@@ -641,7 +644,7 @@ p.pause.hidden{
     }
 
     .container-titles h3{
-        font-size: 1.8em;
+        font-size: 23px;
         line-height: 18px;
     }
 
@@ -657,11 +660,12 @@ p.pause.hidden{
     }
 
     .container-section .reloj{
-        font-size: 3em;
+        font-size: 35px;
         margin-bottom: 5px;
     }
    
     .container-clock p.pause{
+        font-size: 18px;
         margin-bottom: 20px;
         margin-top: 5px;
     }
@@ -676,6 +680,15 @@ p.pause.hidden{
     .container-section .container-btn__clock{
         gap: 15px;
     }
+
+    /* <<---------------- section 2 --------------------> */
+
+
+    .stage .ball{
+        width: 40px; height: 40px;
+    }
+
+
 
 
     /* <<---------------- section 3 --------------------> */
@@ -699,7 +712,9 @@ p.pause.hidden{
     }
 
     .container-countdown{
-        flex-wrap:wrap;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
         margin-bottom: 40px;
         row-gap: 10px;
     }
