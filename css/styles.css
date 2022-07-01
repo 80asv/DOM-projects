@@ -542,9 +542,52 @@ p.pause.hidden{
     color: var(--color-naranja);
 }
 
+/* <<--------------------- scroll progress ---------------------------------> */
 
+#ir_arriba_boton {
+    position: fixed;
+    z-index: 1001;
+    right: 20px;
+    bottom: 25px;
+    color: var(--color-azul);
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .2s ease;
+}
 
+#ir_arriba_boton:hover {
+    transform: scale(1.1);
+}
 
+#ir_arriba_boton i{
+    font-size: 64px;
+}
+
+.indicador_contenedor {
+    width: 100%;
+    position: fixed;
+    top: 72px;
+    height: 5px;
+    z-index: 1001;
+}
+
+.indicador_scroll {
+    height: 100%;
+    width: 0;
+    background-color: var(--color-azul);
+}
+
+.ocultar {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mostrar {
+    opacity: 1;
+    visibility: visible;
+}
 
 
 
@@ -734,6 +777,21 @@ p.pause.hidden{
 
     .container-countdown .box span:last-child{
         font-size: 14px;
+    }
+
+    /* <<---------------- scroll progress --------------------> */
+
+    .indicador_contenedor{
+        top: 65px;
+    }
+
+    #ir_arriba_boton{
+        width: 42px;
+        height: 42px;
+    }
+    
+    #ir_arriba_boton i{
+        font-size: 42px;
     }
 }
 

@@ -7,9 +7,18 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>JS porjects</title>
 </head>
 <body>
+
+    <div class="indicador_contenedor">
+        <div class="indicador_scroll"></div>
+    </div>
+    
+    <div id="ir_arriba_boton" class="ocultar">
+        <i class="fas fa-chevron-circle-up"></i>
+    </div>  
+
     <header class="header">
       <nav>
         <div class="container-btn__menu">
@@ -56,7 +65,7 @@
 
                 <a href="#section2" class="link-section" id="keyboard-events">
                     <div class="icon icon-keyboard"><i class="fa-solid fa-keyboard"></i></div>
-                    <h3>Keyboard event /</h3>
+                    <h3>Keyboard events /</h3>
                     <h3>section 2</h3>
                 </a>
 
@@ -80,10 +89,10 @@
             <div class="reloj close">00:00:00 PM</div><p class="pause">IN PAUSE</p>
         </div>
         <div class="container-btn__clock">
-            <button class="up btn-seccion1" id="iniciar-reloj">Iniciar reloj</button>
-            <button class="up btn-seccion1" id="detener-reloj">Detener reloj</button>
-            <button class="up btn-seccion1" id="iniciar-alarma">Iniciar alarma</button>
-            <button class="up btn-seccion1" id="detener-alarma">Detener alarma</button>
+            <button class="up btn-seccion1" id="iniciar-reloj">Start watch</button>
+            <button class="up btn-seccion1" id="detener-reloj">Stop watch</button>
+            <button class="up btn-seccion1" id="iniciar-alarma">Start alarm</button>
+            <button class="up btn-seccion1" id="detener-alarma">Stop alarm</button>
         </div>
         </div>
     </section>
@@ -110,9 +119,9 @@
             <div class="container-buttons">
                 <input class="input-date" type="date"> 
                 <div class="cont-btn__bottom">
-                    <input class="input-title" type="text" placeholder="Ingresa un titulo" spellcheck="false">
-                    <button class="btn-date iniciar">INICIAR</button> 
-                    <button class="btn-date reiniciar">REINICIAR</button>
+                    <input class="input-title" type="text" placeholder="enter a title" spellcheck="false">
+                    <button class="btn-date iniciar">Start</button> 
+                    <button class="btn-date reiniciar">Restart</button>
                 </div>
             </div>
 
