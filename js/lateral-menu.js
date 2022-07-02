@@ -11,5 +11,14 @@ export default function lateralMenu(menu, btnClose, btnOpen, overlayScreen, menu
             d.querySelector(overlayScreen).classList.remove('hidden');
             d.body.style.overflow = 'hidden';
         }
+
+        if(e.target.matches('.container-more') || e.target.matches(`${'.container-more'} *`)){
+            d.querySelector('.container-list-item').classList.toggle('close');
+            if(!(d.querySelector('.container-list-item').classList.contains('close'))){
+                d.querySelector('.icon-deploy').style.transform = 'rotate(180deg)';
+            } else {
+                d.querySelector('.icon-deploy').style.transform = 'rotate(0deg)';
+            }
+        }
     })
 }
