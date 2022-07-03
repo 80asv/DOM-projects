@@ -7,6 +7,40 @@
     --color-icon-header: #969BAB;
     --font-size-logo: 20px;
     --color-text: #18191F;
+    --color-shadow: rgba(132, 139, 200, 0.18);
+    --screen-menu-color: #50505085;
+    --stage: #EEEFF4;
+    --ball: #FFC278;
+    --color-countdown-pause: rgb(203 203 203);
+    --color-countdown-run: #18191f;
+
+    --body-background: #fff;
+    --color-text-section: #18191F;
+    --color-title: #18191F;
+    --white-darkmode: #FE9A22;
+    --black-header-menu: #fff;
+}
+
+
+.dark{
+    --body-background: #181A1E;
+    --color-text-section: #E4E7EC;
+    --color-title: #F9FAFB;
+    --white-darkmode: #F4F5F7;
+    --black-header-menu: #202528;
+    --grey: #969BAB;
+    --color-shadow: rgb(0 0 0 / 40%);
+    --color-icon-header-bg: #363a3d;
+    --color-icon-header: #969bab;
+    --screen-menu-color: #000000b5;
+    --stage: #475467;
+    --ball: #D0D5DD;
+    --color-countdown-pause: rgb(46 46 46);
+    --color-countdown-run: var(--color-text-section);
+
+    --transition-change: all .4s ease;
+    /* --shadow: 0 1rem 1rem var(--color-shadow); */
+    
 }
 
 html{
@@ -16,6 +50,8 @@ html{
 body{
     font-family: 'Manrope', sans-serif;
     overflow-y: overlay;
+    transition: var(--transition-change);
+    background-color: var(--body-background);
 }
 
 body::-webkit-scrollbar{
@@ -35,10 +71,10 @@ body::-webkit-scrollbar-thumb{
     width: 100%;
     height: 72px;
     top: 0;
-    /* padding: 20px 165px; */
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: var(--transition-change);
+    box-shadow: 0 1rem 1rem var(--color-shadow);
     z-index: 900;
-    background: #fff;
+    background: var(--black-header-menu);
 }
 
 .header nav {
@@ -66,7 +102,8 @@ body::-webkit-scrollbar-thumb{
     height: 45px;
     border-radius: 50%;
 
-    transition: all .03s ease-in;
+    transition: background .03s ease-in;
+    transition: var(--transition-change);
 }
 
 .container-btn__menu .container-logo:hover{
@@ -96,10 +133,12 @@ body::-webkit-scrollbar-thumb{
 
 .left-nav-items a{
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--color-title);
     font-size: 16px;
     font-weight: 600;
     font-family: 'Manrope', sans-serif;
+
+    transition: var(--transition-change);
 }
 
 
@@ -114,15 +153,18 @@ body::-webkit-scrollbar-thumb{
 
 .logotype .logo-svg i{
     font-size: 30px;
-    color: var(--color-naranja);
+    color: var(--white-darkmode);
+    transition: var(--white-darkmode);
 }
 
 .logotype a{
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--color-title);
     font-family: 'Manrope', sans-serif;
     font-size: 20px;
     font-weight: 800;
+
+    transition: var(--transition-change);
 }
 
 
@@ -164,7 +206,7 @@ aside .screen-menu__open{
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: #50505085;
+    background-color: var(--screen-menu-color);
     z-index: 1001;
     top: 0;
     left: 0;
@@ -179,7 +221,7 @@ aside .container-menu{
     left:0;
     width: 370px;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--black-header-menu);
     overflow: hidden;
 
     display: flex;
@@ -213,10 +255,12 @@ aside .container-menu{
     height: 146px;
 } 
 
-.header-menu h3{
-    font-size: 28px;
+.header-menu .title-header{
+    font-size: 32px;
     font-weight: 700;
     font-style: normal;
+    color: var(--color-title);
+    transition: var(--transition-change);
 }
 
 .container-menu .menu-link-section{
@@ -234,7 +278,7 @@ aside .container-menu{
     height: 75px;
     gap: 8px;
     text-decoration: none;
-    color: var(--color-text);
+    color: var(--color-title);
     transition: all 300ms ease;
 }
 
@@ -255,7 +299,7 @@ aside .container-menu{
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: var(--color-text);
+    color: var(--grey);
 }
 
 .menu-link-section h3:last-child{
@@ -291,8 +335,6 @@ aside .container-menu{
     position: fixed;
     bottom: 0;
     margin-bottom: 40px;
-    /* margin-top: auto; */
-
 }
 
 .menu-footer .container-more-info{
@@ -305,6 +347,16 @@ aside .container-menu{
     align-items: center;
     gap: 8px;
     border-top: 1px solid #D9DBE1;
+}
+
+.container-dark-mode .icon-dark-mode,
+.container-dark-mode h3{
+    transition: var(--transition-change);
+    color: var(--color-title);
+}
+
+.container-list-item {
+    display: none;
 }
 
 
@@ -344,6 +396,9 @@ aside .container-menu{
 
 
 
+
+
+
 /* <<---------------------------- section 1 --------------------------------->> */
 
 
@@ -372,12 +427,16 @@ section .container-section{
     font-size: 28px;
     font-weight: 700;
     line-height: 40px;
+    transition: var(--transition-change);
+    color: var(--color-text-section);
 }
 
 .container-titles h3{
     font-size: 48px;
     line-height: 64px;
     font-weight: 800;
+    transition: var(--transition-change);
+    color: var(--color-title);
 }
 
 .container-section .reloj{
@@ -385,6 +444,8 @@ section .container-section{
    font-weight: 200;
    /* line-height: 98px; */
    margin: .7em 5px;
+   transition: var(--transition-change);
+   color: var(--color-text-section);
 }
 
 .container-section .container-btn__clock{
@@ -450,8 +511,9 @@ p.pause.hidden{
     justify-content: center;
     position: relative;
     height: 25em;
-    background-color: var(--color-icon-header-bg);
+    background-color: var(--stage);
     border-radius: 20px;
+    transition: var(--transition-change);
 }
 
 .stage .ball{
@@ -459,7 +521,7 @@ p.pause.hidden{
     height: 50px;
     border-radius: 50%;
     position: absolute;
-    background-color: var(--color-naranja-claro);
+    background-color: var(--ball);
 }
 
 
@@ -581,7 +643,8 @@ p.pause.hidden{
 } 
 
 .box > span{
-    color: rgb(203 203 203);
+    transition: var(--transition-change);
+    color: var(--color-countdown-pause);
 }
 
 .container-countdown .box span:first-child{
@@ -671,8 +734,8 @@ p.pause.hidden{
     .header{
         top: 0;
         /* padding: 20px 20px; */
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-        background: #fff;
+        box-shadow: 0 1rem 1rem var(--color-shadow);
+        background: var(--black-header-menu);
         height: 65px;
     }
 
@@ -717,8 +780,8 @@ p.pause.hidden{
         width: 16rem;
     }
 
-    .header-menu h3{
-        font-size: 23px;
+    .header-menu .title-header{
+        font-size: 20px;
     }
 
     .container-menu .menu-link-section{
@@ -781,7 +844,7 @@ p.pause.hidden{
     }
 
     .container-list-item{
-        margin-left: 14px;
+        /* margin-left: 14px; */
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -800,7 +863,7 @@ p.pause.hidden{
         text-decoration: none;
         font-size: 12px;
         font-weight: 500;
-        color: var(--color-text);
+        color: var(--color-text-section);
     }
 
     .container-list-item .container-icons-menu{

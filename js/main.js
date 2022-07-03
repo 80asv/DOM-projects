@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', () => {
     alarm("assets/alarm.mp3","#iniciar-alarma", "#detener-alarma");
     countdown(".btn-date.iniciar", ".btn-date.reiniciar", ".days", ".hours", ".minutes", ".seconds", ".title-countdown");
     scrollButton('#ir_arriba_boton', '.indicador_scroll');
-    darkMode('.btn-darkmode-bg');
 });
 
 
@@ -21,3 +20,4 @@ document.addEventListener("keydown", e =>{
     moveball(e, ".ball", ".stage");
 })
 
+darkMode('.btn-darkmode-bg');

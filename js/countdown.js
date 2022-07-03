@@ -38,7 +38,7 @@ export function countdown(playCount, stopCount, dd, hh, mm, ss, title){
                 $hours.textContent = `${hours}`;
                 $minutes.textContent = `${minutes}`;
                 $seconds.textContent = `${seconds}`;
-                d.querySelectorAll('.box span').forEach(e => e.style.color = '#000');
+                d.querySelectorAll('.box span').forEach(e => e.style.color = 'var(--color-countdown-run)');
            }, 1000);
 
         })
@@ -83,7 +83,7 @@ export function countdown(playCount, stopCount, dd, hh, mm, ss, title){
                 $hours.textContent = `${hours}`;
                 $minutes.textContent = `${minutes}`;
                 $seconds.textContent = `${seconds}`;
-                d.querySelectorAll('.box span').forEach(e => e.style.color = '#000');
+                d.querySelectorAll('.box span').forEach(e => e.style.color = 'var(--color-countdown-run)');
                 
            }, 1000);
 
@@ -102,7 +102,7 @@ export function countdown(playCount, stopCount, dd, hh, mm, ss, title){
             $hours.textContent = `00`;
             $minutes.textContent = `00`;
             $seconds.textContent = `00`;
-            d.querySelectorAll('.box span').forEach(e => e.style.color = 'rgb(203 203 203)');
+            d.querySelectorAll('.box span').forEach(e => e.style.color = 'var(--color-countdown-pause)');
        }
         
     });
