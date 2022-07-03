@@ -13,6 +13,7 @@
     --ball: #FFC278;
     --color-countdown-pause: rgb(203 203 203);
     --color-countdown-run: #18191f;
+    --line-footer-color: #e7e7e7;
 
     --body-background: #fff;
     --color-text-section: #18191F;
@@ -37,6 +38,7 @@
     --ball: #D0D5DD;
     --color-countdown-pause: rgb(46 46 46);
     --color-countdown-run: var(--color-text-section);
+    --line-footer-color: #3e3e3e;
 
     --transition-change: all .4s ease;
     /* --shadow: 0 1rem 1rem var(--color-shadow); */
@@ -334,7 +336,8 @@ aside .container-menu{
     padding: 0 27px 0 27px;
     position: fixed;
     bottom: 0;
-    margin-bottom: 40px;
+    gap: 10px;
+    margin-bottom: 30px;
 }
 
 .menu-footer .container-more-info{
@@ -346,7 +349,7 @@ aside .container-menu{
     flex-direction: row;
     align-items: center;
     gap: 8px;
-    border-top: 1px solid #D9DBE1;
+    /* border-top: 1px solid #D9DBE1; */
 }
 
 .container-dark-mode .icon-dark-mode,
@@ -362,6 +365,12 @@ aside .container-menu{
 
     /* <<---------------- dark mode btn --------------------> */
 
+.line-footer{
+    height: 2px;
+    background-color: var(--line-footer-color);
+    margin-bottom: 14px;
+    transition: var(--transition-change);
+}
 
 .menu-footer .btn-darkmode-bg{
     display: flex;
