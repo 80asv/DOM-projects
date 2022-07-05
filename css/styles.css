@@ -15,6 +15,7 @@
     --color-countdown-pause: rgb(203 203 203);
     --color-countdown-run: #18191f;
     --line-footer-color: #e7e7e7;
+    --hover-menu: #eb0e0e;
 
     --body-background: #fff;
     --color-text-section: #18191F;
@@ -41,6 +42,7 @@
     --color-countdown-pause: rgb(46 46 46);
     --color-countdown-run: var(--color-text-section);
     --line-footer-color: #3e3e3e;
+    --hover-menu: #ff6e6e;
 
     --transition-change: all .4s ease;
     /* --shadow: 0 1rem 1rem var(--color-shadow); */
@@ -288,6 +290,7 @@ aside .container-menu{
 
 .menu-link-section .link-section:hover{
     transform: translateX(1rem);
+    color: var(--hover-menu);
 }
 
 .icon i{
@@ -736,6 +739,42 @@ p.pause.hidden{
 }
 
 
+/* <<--------------------- section 5 ---------------------------------> */
+
+#section5 p {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--color-title);
+}
+
+
+.container-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-inputs input[type="url"],
+.container-inputs input[type="text"]{
+    width: 417px;
+    height: 45px;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-weight: 700;
+}
+
+#responsive-tester .btn-form{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#responsive-tester .btn-form input{
+    flex-grow: 1;
+}
+
 
 /* <<------------------- responsive design -------------------->> */
 @media screen and (max-height: 612px){
@@ -1076,6 +1115,47 @@ p.pause.hidden{
         font-size: 18px;
         font-weight: 600;
         gap: 18px;
+    }
+
+
+    /* <<---------------- section 5 --------------------> */
+
+    #section5 p {
+        font-size: 15px;
+    }
+
+    #responsive-tester{
+        max-width: 462px;
+    }
+
+
+    .container-inputs{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .container-inputs input[type="url"]{
+        flex-grow: 1;
+        width: 100%;
+        max-width: 600px;
+    }
+    .container-inputs input[type="text"]{
+        width: 100%;
+        flex-grow: 1;
+        max-width: 600px;
+    }
+
+    #responsive-tester .btn-form{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    #responsive-tester .btn-form input{
+        flex-grow: 1;
     }
 
 }
