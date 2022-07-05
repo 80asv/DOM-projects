@@ -17,6 +17,7 @@
     --line-footer-color: #e7e7e7;
     --hover-menu: #eb0e0e;
 
+    --transition-change: all .4s ease;
     --body-background: #fff;
     --color-text-section: #18191F;
     --color-title: #18191F;
