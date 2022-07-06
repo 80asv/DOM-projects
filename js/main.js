@@ -8,6 +8,7 @@ import responsiveMedia from "./responsive-obj.js";
 import responsiveTester from "./responsive-tester.js";
 import userAgent from "./user-agent.js";
 import networkStatus from "./red-detection.js";
+import webcamDetection from "./webcam-detec.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     lateralMenu('.container-menu', '.btn-folded', '.container-logo', '.screen-menu__open', '.link-section');
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     responsiveTester('responsive-tester');
     userAgent('user-device');
+    webcamDetection('webcam');
 });
 
 
