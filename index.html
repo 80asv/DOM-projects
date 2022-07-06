@@ -19,6 +19,7 @@
         <i class="fas fa-chevron-circle-up"></i>
     </div>  
 
+    <div id="red" class="red"></div>
     <header class="header">
       <nav>
         <div class="container-btn__menu">
@@ -203,11 +204,12 @@
             <div class="container-titles">
                 <h2 class="number-section">section 4</h2>
                 <h3 class="title-section">Responsive design</h3>
-        </div>
+            </div>
 
-        <div class="media">
-            <div class="item__media" id="youtube"></div>
-            <div class="item__media" id="gmaps"></div>
+            <div class="media">
+                <div class="item__media" id="youtube"></div>
+                <div class="item__media" id="gmaps"></div>
+            </div>
         </div>
     </section>
 
@@ -217,21 +219,22 @@
             <div class="container-titles">
                 <h2 class="number-section">section 5</h2>
                 <h3 class="title-section">Responsive tester</h3>
+            </div>
+
+            <p>enter a url and the dimensions of the window you want</p>
+
+            <form id="responsive-tester">
+                <div class="container-inputs">
+                    <input type="url" name="direction" placeholder="Url" required>
+                    <input type="text" name="width" placeholder="Width" required>
+                    <input type="text" name="height" placeholder="Height" required>
+                </div>
+                <div class="btn-form">
+                    <input type="submit" name="test" value="Test">
+                    <input type="submit" name="close" value="Close">
+                </div>
+            </form>
         </div>
-
-        <p>enter a url and the dimensions of the window you want</p>
-
-        <form id="responsive-tester">
-            <div class="container-inputs">
-                <input type="url" name="direction" placeholder="Url" required>
-                <input type="text" name="width" placeholder="Width" required>
-                <input type="text" name="height" placeholder="Height" required>
-            </div>
-            <div class="btn-form">
-                <input type="submit" name="test" value="Test">
-                <input type="submit" name="close" value="Close">
-            </div>
-        </form>
     </section>
 
     <section class="section" id="section6">
@@ -240,9 +243,24 @@
                 <h2 class="number-section">section 6</h2>
                 <h3 class="title-section">User agent</h3>
                 <p>Device detection</p>
+            </div>
+            <div id="user-device"></div>
         </div>
-        <div id="user-device"></div>
     </section>
+
+
+    <section class="section" id="section7">
+        <div class="container-section">
+            <div class="container-titles">
+                <h2 class="number-section">section 7</h2>
+                <h3 class="title-section">connection detection</h3>
+            </div>
+        <div id="user-device"></div>
+        </div>
+    </section>
+
+
+
     <script src="js/main.js" type="module"></script>
 </body>
 </html>

@@ -7,6 +7,7 @@ import {darkMode} from "./darkMode.js";
 import responsiveMedia from "./responsive-obj.js";
 import responsiveTester from "./responsive-tester.js";
 import userAgent from "./user-agent.js";
+import networkStatus from "./red-detection.js";
 
 document.addEventListener('DOMContentLoaded', () => {
     lateralMenu('.container-menu', '.btn-folded', '.container-logo', '.screen-menu__open', '.link-section');
@@ -45,3 +46,11 @@ document.addEventListener("keydown", e =>{
 })
 
 darkMode('.btn-darkmode-bg');
+networkStatus();
+ 
+ 
+ 
+ 
+ 
+ 
+ 

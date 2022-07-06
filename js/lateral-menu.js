@@ -6,6 +6,10 @@ export default function lateralMenu(menu, btnClose, btnOpen, overlayScreen, menu
             d.querySelector(menu).classList.add('unfolded');
             d.querySelector(overlayScreen).classList.add('hidden');
             d.body.style.overflow = 'overlay';
+            if(!(d.querySelector('.container-list-item').classList.contains('close'))){
+                d.querySelector('.container-list-item').classList.add('close');
+                d.querySelector('.icon-deploy').style.transform = 'rotate(0deg)';
+            }
         } else if (e.target.matches(btnOpen) || e.target.matches(`${btnOpen} *`)){
             d.querySelector(menu).classList.remove('unfolded');
             d.querySelector(overlayScreen).classList.remove('hidden');

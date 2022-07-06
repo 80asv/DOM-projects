@@ -60,12 +60,6 @@ export default function userAgent(id){
         </tbody>
     </table>
     `
-
-
-
-
-
-    console.log(ua);
 }
 
 
