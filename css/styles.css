@@ -1078,6 +1078,70 @@ p.pause.hidden{
 }
 
 
+/* <<--------------------- section 10 --------------------------------->> */
+
+.players{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin: 80px 0;
+}
+
+.players .player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: all .3s ease;
+}
+
+.player i{
+    font-size: 85px;
+    color: var(--color-icon-header-bg);
+    margin-top: auto;
+}
+
+.player p{
+    font-size: 18px;
+    font-weight: 200;
+    margin-top: 9px;
+    margin-bottom: auto;
+}
+
+.player:hover,
+.player:focus{
+    transform: scale(1.2);
+}
+
+.player:hover .ruby{
+    color: #d91404;
+}
+
+.player:hover .php{
+    color: #6181b6;
+}
+
+.player:hover .js{
+    color: #f0db4f;
+}
+
+.player:hover .cpp{
+    color: #9b033b;
+}
+
+.player:hover .java{
+    color: #ea2d2e;
+}
+
+.player:hover .py{
+   color: #ffd845;
+}
+
 
 
 
