@@ -10,7 +10,8 @@ import userAgent from "./user-agent.js";
 import networkStatus from "./red-detection.js";
 import webcamDetection from "./webcam-detec.js";
 import getGeolocation from "./geolocation.js";
-import {searchFilter, addWord} from "./search.js";
+import {searchFilter, addWord, colorCards} from "./search.js";
+
 
 document.addEventListener('DOMContentLoaded', () => {
     lateralMenu('.container-menu', '.btn-folded', '.container-logo', '.screen-menu__open', '.link-section');
@@ -43,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     getGeolocation('geolocation');
     searchFilter('.card-filter', '.card-container');
     addWord('.word-card', ".add-card", ".cards");
+    colorCards('.color-card', '.card-container');
 });
 
 
