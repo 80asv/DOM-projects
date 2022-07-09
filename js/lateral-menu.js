@@ -6,6 +6,7 @@ export default function lateralMenu(menu, btnClose, btnOpen, overlayScreen, menu
             d.querySelector(menu).classList.add('unfolded');
             d.querySelector(overlayScreen).classList.add('hidden');
             d.body.style.overflow = 'overlay';
+            document.querySelector('.container-menu').scrollTo({behavior:"auto", top: 0})
             if(!(d.querySelector('.container-list-item').classList.contains('close'))){
                 d.querySelector('.container-list-item').classList.add('close');
                 d.querySelector('.icon-deploy').style.transform = 'rotate(0deg)';
@@ -26,3 +27,4 @@ export default function lateralMenu(menu, btnClose, btnOpen, overlayScreen, menu
         }
     })
 }
+

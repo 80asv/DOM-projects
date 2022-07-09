@@ -1080,6 +1080,19 @@ p.pause.hidden{
 
 /* <<--------------------- section 10 --------------------------------->> */
 
+#section10 .container-section{
+    min-height: 50em;
+}
+
+.color-logos{
+    --ruby: #d91404;
+    --php: #6181b6;
+    --js: #f0db4f;
+    --cpp: #9b033b;
+    --java: #ea2d2e;
+    --py: #ffd845;
+}
+
 .players{
     display: flex;
     flex-direction: row;
@@ -1102,7 +1115,7 @@ p.pause.hidden{
 
 .player i{
     font-size: 85px;
-    color: var(--color-icon-header-bg);
+    color: var(--line-footer-color);
     margin-top: auto;
 }
 
@@ -1111,6 +1124,7 @@ p.pause.hidden{
     font-weight: 200;
     margin-top: 9px;
     margin-bottom: auto;
+    color: var(--color-title);
 }
 
 .player:hover,
@@ -1118,32 +1132,63 @@ p.pause.hidden{
     transform: scale(1.2);
 }
 
-.player:hover .ruby{
-    color: #d91404;
+.player:hover .ruby,
+.p-ruby.winner i{
+    color: var(--ruby);
+    transform: scale(1.2);
 }
 
-.player:hover .php{
-    color: #6181b6;
+.player:hover .php,
+.p-php.winner i{
+    color: var(--php);
+    transform: scale(1.2);
 }
 
-.player:hover .js{
-    color: #f0db4f;
+.player:hover .js,
+.p-js.winner i{
+    color: var(--js);
+    transform: scale(1.2);
 }
 
-.player:hover .cpp{
-    color: #9b033b;
+.player:hover .cpp,
+.p-cpp.winner i{
+    color: var(--cpp);
+    transform: scale(1.2);
 }
 
-.player:hover .java{
-    color: #ea2d2e;
+.player:hover .java,
+.p-java.winner i{
+    color: var(--java);
+    transform: scale(1.2);
 }
 
-.player:hover .py{
-   color: #ffd845;
+.player:hover .py,
+.p-py.winner i{
+   color: var(--py);
+   transform: scale(1.2);
 }
 
 
 
+#winner{
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--color-azul);
+    box-shadow: 0px 2px 4px rgb(136 144 194 / 20%), 0px 5px 15px rgb(37 44 97 / 15%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px;
+    min-width: 119px;
+}
+
+.p-winner{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 45px;
+    color: var(--color-title);
+}
 
 
 /* <<------------------- responsive design -------------------->> */
@@ -1572,7 +1617,7 @@ p.pause.hidden{
         width: auto;
     }
 
-    /* <<--------------------- section 7 ---------------------------------> */
+    /* <<--------------------- section 9 ---------------------------------> */
 
 
     .card-filter{
@@ -1606,50 +1651,23 @@ p.pause.hidden{
     .card-container p{
         font-size: 16px;
     }
+
+
+    /* <<--------------------- section 10 ---------------------------------> */
+
+    .players {
+        gap: 0;
+        justify-content: space-evenly;
+        margin: 45px 0;
+    }
+
+    .player i {
+        font-size: 55px;
+    }
+
+    .p-winner{
+        font-size: 18px;
+    }
 }
 
 
-
-/**/
-/* .search-filter{ */
-/*     max-width: 1000px; */
-/* } */
-
-/* .card-controls{ */
-/*     display: flex; */
-/*     flex-direction: row; */
-/*     flex-wrap: wrap; */
-/*     gap: 30px; */
-/*     justify-content: space-evenly; */
-/* } */
-
-/**/
-/* .card-filter{ */
-/*     500px; */
-/* } */
-
-/* .search-filter .card-controls .card-filter, .search-filter .container-add-card .word-card { */
-/*     height: 45px; */
-/*     border-radius: 30px; */
-/*     padding-left: 15px; */
-/*     font-weight: 700; */
-/*     outline: none; */
-/*     border: none; */
-/*     background-color: #EEEFF4; */
-/* } */
-/**/
-/**/
-/* responsve:is */
-/**/
-/**/
-/**/
-/**/
-/* .card-filter{ */
-/*     width: 100%; */
-/*     max-width: 582px; */
-/* } */
-/**/
-/**/
-/* .word-card { */
-/*     max-width: 125px; */
-/* } */

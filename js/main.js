@@ -11,6 +11,7 @@ import networkStatus from "./red-detection.js";
 import webcamDetection from "./webcam-detec.js";
 import getGeolocation from "./geolocation.js";
 import {searchFilter, addWord, colorCards} from "./search.js";
+import draw from "./digital-giveaway.js";
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -45,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     searchFilter('.card-filter', '.card-container');
     addWord('.word-card', ".add-card", ".cards");
     colorCards('.color-card', '.card-container');
+    draw('#winner', '.player');
 });
 
 
