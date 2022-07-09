@@ -1191,6 +1191,65 @@ p.pause.hidden{
 }
 
 
+/* <<--------------------- section 10 --------------------------------->> */
+
+
+.carrousel{
+    width: 90%;
+    max-width: 120em;
+    padding: 2em;
+    background-color: lightblue;
+}
+.carrousel .large{
+    width: 200%;
+    background-color: orange;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+
+    transition: all .5s ease;
+    transform: translateX(0%);
+}
+
+.carrousel img{
+    width: calc(100% / 2 - 2em);
+    background-color: lime;
+    min-height: 10vh;
+}
+.carrousel .points{
+    width: 100%;
+    background-color: red;
+    padding: .4em;
+    margin: 1em 0 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.carrousel .point{
+    width: 2em;
+    height: 2em;
+    background-color: blue;
+    margin: .4em;
+}
+
+.carrousel .point.active{
+    background-color: orange;
+}
+
+
+
+
+
+
+
+
+
 /* <<------------------- responsive design -------------------->> */
 @media screen and (max-height: 612px){
     .menu-footer{
