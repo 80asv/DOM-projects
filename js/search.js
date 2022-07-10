@@ -23,18 +23,33 @@ export function addWord(input, btnAdd, div){
                                     <p class="card-word">${$inputWord.value}</p>
                                 </div>`;
                 $div.innerHTML += content;
+                $inputWord.value = '';
             }
 
         }
     })
+
+    
+    let inputWord = document.querySelector('.word-card');
+
+    inputWord.addEventListener('keydown', e => {
+        if(e.keyCode === 13){
+                if(!($inputWord.value === '')){
+                    const content = `<div class="card-container" style="background-color: ${colors[numRandom(0, colors.length)]}">
+                                        <p class="card-word">${$inputWord.value}</p>
+                                    </div>`;
+                    $div.innerHTML += content;
+                    $inputWord.value = '';
+                }
+        }
+    })
+
 }
 
 export function colorCards(btnChange, cards){
     document.addEventListener('click', e =>{
         if(e.target.matches(btnChange) || e.target.matches(`${btnChange} *`)){
-            console.log(numRandom(0, colors.length));
             document.querySelectorAll(cards).forEach(el => el.style.backgroundColor = `${colors[numRandom(0, colors.length)]}`);
-            // $cards.forEach(el => el.style.backgroundColor = 'yellow');
         }
     })
 }

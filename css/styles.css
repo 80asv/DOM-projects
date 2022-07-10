@@ -1191,7 +1191,7 @@ p.pause.hidden{
 }
 
 
-/* <<--------------------- section 10 --------------------------------->> */
+/* <<--------------------- section 11 --------------------------------->> */
 
 
 .carrousel{
@@ -1199,9 +1199,10 @@ p.pause.hidden{
     max-width: 120em;
     padding: 2em;
     background-color: lightblue;
+    overflow: hidden;
 }
 .carrousel .large{
-    width: 200%;
+    width: calc(500% - 4em);
     background-color: orange;
 
     display: flex;
@@ -1215,16 +1216,16 @@ p.pause.hidden{
 }
 
 .carrousel img{
-    width: calc(100% / 2 - 2em);
+    width: calc(100% / 5 - 2em);
     background-color: lime;
     min-height: 10vh;
 }
 .carrousel .points{
-    width: 100%;
+    
     background-color: red;
     padding: .4em;
     margin: 1em 0 0;
-
+    
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -1232,10 +1233,11 @@ p.pause.hidden{
     list-style: none;
 }
 .carrousel .point{
-    width: 2em;
-    height: 2em;
+    width: 1.5em;
+    height: 1.5em;
     background-color: blue;
     margin: .4em;
+    border-radius: 50%;
 }
 
 .carrousel .point.active{
@@ -1727,6 +1729,7 @@ p.pause.hidden{
     .p-winner{
         font-size: 18px;
     }
+
 }
 
 

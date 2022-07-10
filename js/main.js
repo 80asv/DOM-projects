@@ -12,6 +12,7 @@ import webcamDetection from "./webcam-detec.js";
 import getGeolocation from "./geolocation.js";
 import {searchFilter, addWord, colorCards} from "./search.js";
 import draw from "./digital-giveaway.js";
+import carrousel from "./carrousel.js";
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -47,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     addWord('.word-card', ".add-card", ".cards");
     colorCards('.color-card', '.card-container');
     draw('#winner', '.player');
+    carrousel('.large', '.point');
 });
 
 
@@ -55,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener("keydown", e =>{
     moveball(e, ".ball", ".stage");
 })
+
 
 darkMode('.btn-darkmode-bg');
 networkStatus();
