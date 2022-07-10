@@ -15,6 +15,12 @@ export default function lateralMenu(menu, btnClose, btnOpen, overlayScreen, menu
             d.querySelector(menu).classList.remove('unfolded');
             d.querySelector(overlayScreen).classList.remove('hidden');
             d.body.style.overflow = 'hidden';
+
+            if(d.querySelector('.btn-collapse-menu').classList.contains('open')){
+                d.querySelector('.btn-collapse-menu').classList.remove('open')
+                d.querySelector('.scroll-spy').classList.remove('open')
+            }
+
         }
 
         if(e.target.matches('.container-more') || e.target.matches(`${'.container-more'} *`)){
