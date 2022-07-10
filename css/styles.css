@@ -210,7 +210,10 @@ body::-webkit-scrollbar-thumb{
     color: #616572;
 }
 
+
+
 /* <<---------------------------- menu desplegable --------------------------------->> */
+
 
 aside .screen-menu__open{
     position: fixed;
@@ -1369,6 +1372,13 @@ p.pause.hidden{
 }
 
 @media screen and (max-width: 1153px){
+
+    .scroll-spy{
+        display: none;
+    }
+
+
+
     section .container-section{
         padding: 5em 1em;
     }

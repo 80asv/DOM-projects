@@ -14,6 +14,7 @@ import {searchFilter, addWord, colorCards} from "./search.js";
 import draw from "./digital-giveaway.js";
 import carrousel from "./carrousel.js";
 import scrollSpy from "./scroll-spy.js";
+import smartVideo from "./smart-video.js";
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -51,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     draw('#winner', '.player');
     carrousel('.large', '.point');
     scrollSpy('.btn-collapse-menu', '.scroll-spy');
+    smartVideo();
 });
 
 
