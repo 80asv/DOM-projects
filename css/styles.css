@@ -158,7 +158,7 @@ body::-webkit-scrollbar-thumb{
      align-items: center;
      justify-content: space-between;
      gap: 10px;
-     margin-right: 118px;
+     margin-right: 45px;
 } 
 
 .logotype .logo-svg i{
@@ -1272,6 +1272,91 @@ p.pause.hidden{
 
 
 /* <<------------------- responsive design -------------------->> */
+@media screen and (min-width: 1153px){
+    .scroll-spy{
+        position: fixed;
+        z-index: 1001;
+        top: 12%;
+        left: 80%;
+        right: 0;
+        bottom: 0;
+        width: 20%;
+        
+
+        overflow-x: overlay;
+        transform: translateX(100%);
+        transition: all .2s ease;
+    }
+
+    .scroll-spy.open{
+        transform: translateX(0%);
+    }
+    
+    .scroll-spy .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    .scroll-spy .menu a{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 75px;
+        gap: 8px;
+        text-decoration: none;
+        color: var(--color-title);
+        transition: all 300ms ease;
+
+        padding-right: 20%;
+    }
+
+    .scroll-spy .menu a:hover{
+        transform: translateX(-2rem);
+        color: var(--hover-menu);
+    }
+    
+    .scroll-spy .menu a.active{
+        transform: translateX(-4rem);
+        color: var(--color-naranja);
+    }
+
+    .scroll-spy::-webkit-scrollbar{
+        width: 3px;
+    }
+ 
+    .scroll-spy::-webkit-scrollbar-thumb{
+        background-color: #d2d2d200;
+        border-radius: 5px;
+    }
+    
+    .header .btn-collapse-menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        margin-left: 25px;
+        cursor: pointer;
+        transition: all .3s ease;
+        transform: rotate(0deg);
+    }
+
+    .header .btn-collapse-menu.open{
+        transform: rotate(180deg);
+    }
+
+    .header .btn-collapse-menu i{
+        font-size: 30px;
+        color: var(--color-title);
+    }
+
+}
+
+ 
+
+
 @media screen and (max-height: 612px){
     .menu-footer{
         position: relative;

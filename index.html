@@ -43,6 +43,7 @@
         <div class="social-links">
             <a href="#"><i class="fa-brands fa-instagram"></i></a> 
             <a href="#"><i class="fa-brands fa-twitter"></i></a> 
+            <div class="btn-collapse-menu"><i class="fa-solid fa-angles-left"></i></div>
         </div>
       </nav>  
     </header> 
@@ -157,249 +158,325 @@
             </div>
         </div>
     </aside>
-    <section class="section" id="section1">
-        <div class="container-section">
-        <div class="container-titles">
-            <h2 class="number-section">section 1</h2>
-            <h3 class="title-section">Digital clock</h3>
-        </div>
-        <div class="container-clock">
-            <div class="reloj close">00:00:00 PM</div><p class="pause">IN PAUSE</p>
-        </div>
-        <div class="container-btn__clock">
-            <button class="up btn-seccion1" id="iniciar-reloj">Start watch</button>
-            <button class="up btn-seccion1" id="detener-reloj">Stop watch</button>
-            <button class="up btn-seccion1" id="iniciar-alarma">Start alarm</button>
-            <button class="up btn-seccion1" id="detener-alarma">Stop alarm</button>
-        </div>
-        </div>
+
+    <aside class="scroll-spy">
+        <nav class="menu">
+            <a href="#section1" class="link-section" id="digital-clock">
+                <!-- <h3>section 1</h3> -->
+                <div class="icon icon-clock"><i class="fa-solid fa-clock"></i></div>
+                <h3>Digital Clock</h3>
+            </a>
+
+            <a href="#section2" class="link-section" id="keyboard-events">
+                <!-- <h3>section 2</h3> -->
+                <div class="icon icon-keyboard"><i class="fa-solid fa-keyboard"></i></div>
+                <h3>Keyboard events</h3>
+            </a>
+
+
+            <a href="#section3" class="link-section" id="countdown">
+                <!-- <h3>section 3</h3> -->
+                <div class="icon icon-cuntdown"><i class="fa-solid fa-stopwatch-20"></i></div>
+                <h3>Countdown</h3>
+            </a>
+
+            <a href="#section4" class="link-section" id="resp-design">
+                <!-- <h3>section 4</h3> -->
+                <div class="icon icon-mobile"><i class="fa-solid fa-mobile"></i></div>
+                <h3>Responsive Design</h3>
+            </a>
+
+            <a href="#section5" class="link-section" id="resp-tester">
+                <!-- <h3>section 5</h3> -->
+                <div class="icon icon-mobile"><i class="fa-solid fa-cube"></i></div>
+                <h3>Responsive tester</h3>
+            </a>               
+
+            <a href="#section6" class="link-section" id="user-agent">
+                <!-- <h3>section 6</h3> -->
+                <div class="icon icon-astronaut"><i class="fa-solid fa-user-astronaut"></i></div>
+                <h3>User agent</h3>
+            </a> 
+
+            <a href="#section7" class="link-section" id="webcam-menu">
+                <!-- <h3>section 7</h3> -->
+                <div class="icon icon-astronaut"><i class="fa-solid fa-camera"></i></div>
+                <h3>Webcam</h3>
+            </a> 
+
+            <a href="#section8" class="link-section" id="geolocation-menu">
+                <!-- <h3>section 8</h3> -->
+                <div class="icon icon-location"><i class="fa-solid fa-location-crosshairs"></i></div>
+                <h3>Geolocation</h3>
+            </a> 
+
+            <a href="#section9" class="link-section" id="search-filters">
+                <!-- <h3>section 9</h3> -->
+                <div class="icon icon-filter"><i class="fa-solid fa-filter"></i></div>
+                <h3>search filters</h3>
+            </a> 
+
+            <a href="#section10" class="link-section" id="digital-giveaway">
+                <!-- <h3>section 10</h3> -->
+                <div class="icon icon-filter"><i class="fa-solid fa-ticket"></i></div>
+                <h3>giveaway</h3>
+            </a> 
+
+            <a href="#section11" class="link-section" id="carousel">
+                <!-- <h3>section 11</h3> -->
+                <div class="icon icon-filter"><i class="fa-solid fa-images"></i></div>
+                <h3>Carousel</h3>
+            </a>
+        </nav>
+    </aside>
+
+
+
+
+    <main>
+        <section class="section" id="section1">
+            <div class="container-section">
+            <div class="container-titles">
+                <h2 class="number-section">section 1</h2>
+                <h3 class="title-section">Digital clock</h3>
+            </div>
+            <div class="container-clock">
+                <div class="reloj close">00:00:00 PM</div><p class="pause">IN PAUSE</p>
+            </div>
+            <div class="container-btn__clock">
+                <button class="up btn-seccion1" id="iniciar-reloj">Start watch</button>
+                <button class="up btn-seccion1" id="detener-reloj">Stop watch</button>
+                <button class="up btn-seccion1" id="iniciar-alarma">Start alarm</button>
+                <button class="up btn-seccion1" id="detener-alarma">Stop alarm</button>
+            </div>
+            </div>
+        </section>
+
+        <section class="section" id="section2">
+            <div class="container-section">
+                <div class="container-titles">
+                    <h2 class="number-section">section 2</h2>
+                    <h3 class="title-section">Keyboard events</h3>
+                </div>
+                <div class="stage">
+                    <div class="ball"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="section3">
+            <div class="container-section">
+                <div class="container-titles">
+                    <h2 class="number-section">section 3</h2>
+                    <h3 class="title-section">Countdown</h3>
+                </div>
+
+                <div class="container-buttons">
+                    <input class="input-date" type="date"> 
+                    <div class="cont-btn__bottom">
+                        <input class="input-title" type="text" placeholder="enter a title" spellcheck="false">
+                        <button class="btn-date iniciar">Start</button> 
+                        <button class="btn-date reiniciar">Restart</button>
+                    </div>
+                </div>
+
+                <div class="container-countdown">
+                    <div class="box container-days">
+                        <span class="days">00</span>
+                        <span class="text-days">DAYS</span>
+                    </div>
+
+                    <div class="box container-hours">
+                        <span class="hours">00</span>
+                        <span class="text-hours">HOURS</span>
+                    </div>
+                    
+                    <div class="box container-minutes">
+                        <span class="minutes">00</span>
+                        <span class="text-minutes">MINUTES</span>
+                    </div>           
+
+                    <div class="box container-seconds">
+                        <span class="seconds">00</span>
+                        <span class="text-seconds">SECONDS</span>
+                    </div>       
+                </div>   
+
+                <div class="container-title-countdown">
+                    <span class="title-countdown"></span>
+                </div>
+                <br>
+            </div>
+        </section>
+
+        <section class="section" id="section4">
+            <div class="container-section">
+                <div class="container-titles">
+                    <h2 class="number-section">section 4</h2>
+                    <h3 class="title-section">Responsive design</h3>
+                </div>
+
+                <div class="media">
+                    <div class="item__media" id="youtube"></div>
+                    <div class="item__media" id="gmaps"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="section5">
+            <div class="container-section">
+                <div class="container-titles">
+                    <h2 class="number-section">section 5</h2>
+                    <h3 class="title-section">Responsive tester</h3>
+                </div>
+
+                <p>enter a url and the dimensions of the window you want</p>
+
+                <form id="responsive-tester">
+                    <div class="container-inputs">
+                        <input type="url" name="direction" placeholder="Url" required>
+                        <input type="text" name="width" placeholder="Width" required>
+                        <input type="text" name="height" placeholder="Height" required>
+                    </div>
+                    <div class="btn-form">
+                        <input type="submit" name="test" value="Test">
+                        <input type="submit" name="close" value="Close">
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" id="section6">
+            <div class="container-section">
+                <div class="container-titles">
+                    <h2 class="number-section">section 6</h2>
+                    <h3 class="title-section">User agent</h3>
+                    <p>Device detection</p>
+                </div>
+                <div id="user-device"></div>
+            </div>
+        </section>
+
+
+        <section class="section" id="section7">
+            <div class="container-section">
+                <div class="container-titles">
+                    <h2 class="number-section">section 7</h2>
+                    <h3 class="title-section">Webcam detection</h3>
+                </div>
+                <div class="container-webcam">
+                    <video id="webcam"></video>
+                    <!-- <div class="btns-camera"> -->
+                    <!--     <button class="camera-on" type="button">turn on camera</button> -->
+                    <!--     <button class="camenra-off" type="button">turn off camera</button> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="section8">
+            <div class="container-section">
+                <div class="container-titles">
+                    <h2 class="number-section">section 8</h2>
+                    <h3 class="title-section">Geolocation</h3>
+                </div>
+                <div id="geolocation"></div>
     </section>
 
-    <section class="section" id="section2">
-        <div class="container-section">
-            <div class="container-titles">
-                <h2 class="number-section">section 2</h2>
-                <h3 class="title-section">Keyboard events</h3>
-            </div>
-            <div class="stage">
-                <div class="ball"></div>
-            </div>
-        </div>
+        <section class="section" id="section9">
+            <div class="container-section">
+                <div class="container-titles">
+                    <h2 class="number-section">section 9</h2>
+                    <h3 class="title-section">Search filters</h3>
+                </div>
+            <div class="search-filter">
+                <div class="card-controls">
+                    <!-- <div class="inputs-search"> -->
+                        <input class="card-filter" type="search" placeholder="search">
+                    <!-- </div> -->
+                    <div class="container-add-card">
+                        <button class="color-card"><i class="fa-solid fa-paintbrush"></i></button>
+                        <button class="add-card"><i class="fa-solid fa-circle-plus"></i></button>
+                        <!-- <input class="remove-card" type="button" value="remove"> -->
+                        <input class="word-card" type="text" placeholder="Word card">
+                    </div>
+                </div>
+                <article class="cards">
+                    <div class="card-container">
+                        <p class="card-word">music</p>
+                    </div>
+                    <div class="card-container">
+                        <p class="card-word">programming</p>
+                    </div>
+                    <div class="card-container">
+                        <p class="card-word">sleep</p>
+                    </div>
+                </article>
+            </div> 
     </section>
 
-    <section class="section" id="section3">
-        <div class="container-section">
-            <div class="container-titles">
-                <h2 class="number-section">section 3</h2>
-                <h3 class="title-section">Countdown</h3>
-            </div>
-
-            <div class="container-buttons">
-                <input class="input-date" type="date"> 
-                <div class="cont-btn__bottom">
-                    <input class="input-title" type="text" placeholder="enter a title" spellcheck="false">
-                    <button class="btn-date iniciar">Start</button> 
-                    <button class="btn-date reiniciar">Restart</button>
+        <section class="section" id="section10">
+            <div class="container-section">
+                <div class="container-titles">
+                    <h2 class="number-section">section 10</h2>
+                    <h3 class="title-section">Digital giveaway</h3>
                 </div>
-            </div>
-
-            <div class="container-countdown">
-                <div class="box container-days">
-                    <span class="days">00</span>
-                    <span class="text-days">DAYS</span>
+                <div class="players color-logos">
+                    <div class="player p-ruby">
+                        <i class="ruby devicon-ruby-plain"></i>
+                        <p class="player-name">Ruby</p>
+                    </div>
+                    <div class="player p-php">
+                        <i class="php devicon-php-plain"></i>
+                        <p class="player-name">PHP</p>
+                    </div>
+                    <div class="player p-js">
+                        <i class="js devicon-javascript-plain"></i>
+                        <p class="player-name">javaScript</p>
+                    </div>
+                    <div class="player p-cpp">
+                        <i class="cpp devicon-cplusplus-plain"></i>
+                        <p class="player-name">C++</p>
+                    </div>
+                    <div class="player p-java">
+                        <i class="java devicon-java-plain"></i>
+                        <p class="player-name">java</p>
+                    </div>
+                    <div class="player p-py">
+                        <i class="py devicon-python-plain"></i>
+                        <p class="player-name">phyton</p>
+                    </div>
                 </div>
-
-                <div class="box container-hours">
-                    <span class="hours">00</span>
-                    <span class="text-hours">HOURS</span>
-                </div>
-                
-                <div class="box container-minutes">
-                    <span class="minutes">00</span>
-                    <span class="text-minutes">MINUTES</span>
-                </div>           
-
-                <div class="box container-seconds">
-                    <span class="seconds">00</span>
-                    <span class="text-seconds">SECONDS</span>
-                </div>       
-            </div>   
-
-            <div class="container-title-countdown">
-                <span class="title-countdown"></span>
-            </div>
-            <br>
-        </div>
+                <button id="winner">get winner!</button>
     </section>
-
-    <section class="section" id="section4">
-        <div class="container-section">
-            <div class="container-titles">
-                <h2 class="number-section">section 4</h2>
-                <h3 class="title-section">Responsive design</h3>
-            </div>
-
-            <div class="media">
-                <div class="item__media" id="youtube"></div>
-                <div class="item__media" id="gmaps"></div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="section" id="section5">
-        <div class="container-section">
-            <div class="container-titles">
-                <h2 class="number-section">section 5</h2>
-                <h3 class="title-section">Responsive tester</h3>
-            </div>
-
-            <p>enter a url and the dimensions of the window you want</p>
-
-            <form id="responsive-tester">
-                <div class="container-inputs">
-                    <input type="url" name="direction" placeholder="Url" required>
-                    <input type="text" name="width" placeholder="Width" required>
-                    <input type="text" name="height" placeholder="Height" required>
-                </div>
-                <div class="btn-form">
-                    <input type="submit" name="test" value="Test">
-                    <input type="submit" name="close" value="Close">
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <section class="section" id="section6">
-        <div class="container-section">
-            <div class="container-titles">
-                <h2 class="number-section">section 6</h2>
-                <h3 class="title-section">User agent</h3>
-                <p>Device detection</p>
-            </div>
-            <div id="user-device"></div>
-        </div>
-    </section>
-
-
-    <section class="section" id="section7">
-        <div class="container-section">
-            <div class="container-titles">
-                <h2 class="number-section">section 7</h2>
-                <h3 class="title-section">Webcam detection</h3>
-            </div>
-            <div class="container-webcam">
-                <video id="webcam"></video>
-                <!-- <div class="btns-camera"> -->
-                <!--     <button class="camera-on" type="button">turn on camera</button> -->
-                <!--     <button class="camenra-off" type="button">turn off camera</button> -->
-                <!-- </div> -->
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="section8">
-        <div class="container-section">
-            <div class="container-titles">
-                <h2 class="number-section">section 8</h2>
-                <h3 class="title-section">Geolocation</h3>
-            </div>
-            <div id="geolocation"></div>
-   </section>
-
-    <section class="section" id="section9">
-        <div class="container-section">
-            <div class="container-titles">
-                <h2 class="number-section">section 9</h2>
-                <h3 class="title-section">Search filters</h3>
-            </div>
-           <div class="search-filter">
-               <div class="card-controls">
-                   <!-- <div class="inputs-search"> -->
-                       <input class="card-filter" type="search" placeholder="search">
-                   <!-- </div> -->
-                   <div class="container-add-card">
-                       <button class="color-card"><i class="fa-solid fa-paintbrush"></i></button>
-                       <button class="add-card"><i class="fa-solid fa-circle-plus"></i></button>
-                       <!-- <input class="remove-card" type="button" value="remove"> -->
-                       <input class="word-card" type="text" placeholder="Word card">
-                   </div>
-               </div>
-               <article class="cards">
-                   <div class="card-container">
-                       <p class="card-word">music</p>
-                   </div>
-                   <div class="card-container">
-                       <p class="card-word">programming</p>
-                   </div>
-                   <div class="card-container">
-                       <p class="card-word">sleep</p>
-                   </div>
-               </article>
-           </div> 
-   </section>
-
-    <section class="section" id="section10">
-        <div class="container-section">
-            <div class="container-titles">
-                <h2 class="number-section">section 10</h2>
-                <h3 class="title-section">Digital giveaway</h3>
-            </div>
-            <div class="players color-logos">
-                <div class="player p-ruby">
-                    <i class="ruby devicon-ruby-plain"></i>
-                    <p class="player-name">Ruby</p>
-                </div>
-                <div class="player p-php">
-                    <i class="php devicon-php-plain"></i>
-                    <p class="player-name">PHP</p>
-                </div>
-                <div class="player p-js">
-                    <i class="js devicon-javascript-plain"></i>
-                    <p class="player-name">javaScript</p>
-                </div>
-                <div class="player p-cpp">
-                    <i class="cpp devicon-cplusplus-plain"></i>
-                    <p class="player-name">C++</p>
-                </div>
-                <div class="player p-java">
-                    <i class="java devicon-java-plain"></i>
-                    <p class="player-name">java</p>
-                </div>
-                <div class="player p-py">
-                    <i class="py devicon-python-plain"></i>
-                    <p class="player-name">phyton</p>
-                </div>
-            </div>
-            <button id="winner">get winner!</button>
-   </section>
- 
-    <section class="section" id="section11">
-        <div class="container-section">
-            <div class="container-titles">
-                <h2 class="number-section">section 11</h2>
-                <h3 class="title-section">Carousel</h3>
-            </div>
-            <div class="carrousel">
-                <div class="large">
-                    <img src="https://w.wallhaven.cc/full/x8/wallhaven-x8ye3z.jpg" alt="Imagen 1" class="img">
-                    <img src="https://w.wallhaven.cc/full/45/wallhaven-458m84.jpg" alt="Imagen 2" class="img">
-                    <img src="https://w.wallhaven.cc/full/57/wallhaven-579gz8.jpg" alt="Imagen 3" class="img">
-                    <img src="https://w.wallhaven.cc/full/dp/wallhaven-dp77vg.jpg" alt="Imagen 4" class="img">
-                    <img src="https://w.wallhaven.cc/full/e7/wallhaven-e7mdyo.png" alt="Imagen 5" class="img">
-                </div>
-
-                <ul class="points">
-                    <li class="point active"></li>
-                    <li class="point"></li>
-                    <li class="point"></li>
-                    <li class="point"></li>
-                    <li class="point"></li>
-                </ul>
-            </div>
-        </div>
-    </section>  
     
+        <section class="section" id="section11">
+            <div class="container-section">
+                <div class="container-titles">
+                    <h2 class="number-section">section 11</h2>
+                    <h3 class="title-section">Carousel</h3>
+                </div>
+                <div class="carrousel">
+                    <div class="large">
+                        <img src="https://w.wallhaven.cc/full/x8/wallhaven-x8ye3z.jpg" alt="Imagen 1" class="img">
+                        <img src="https://w.wallhaven.cc/full/45/wallhaven-458m84.jpg" alt="Imagen 2" class="img">
+                        <img src="https://w.wallhaven.cc/full/57/wallhaven-579gz8.jpg" alt="Imagen 3" class="img">
+                        <img src="https://w.wallhaven.cc/full/dp/wallhaven-dp77vg.jpg" alt="Imagen 4" class="img">
+                        <img src="https://w.wallhaven.cc/full/e7/wallhaven-e7mdyo.png" alt="Imagen 5" class="img">
+                    </div>
+
+                    <ul class="points">
+                        <li class="point active"></li>
+                        <li class="point"></li>
+                        <li class="point"></li>
+                        <li class="point"></li>
+                        <li class="point"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>  
+    </main>
     <script src="js/main.js" type="module"></script>
 </body>
 </html>

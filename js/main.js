@@ -13,6 +13,7 @@ import getGeolocation from "./geolocation.js";
 import {searchFilter, addWord, colorCards} from "./search.js";
 import draw from "./digital-giveaway.js";
 import carrousel from "./carrousel.js";
+import scrollSpy from "./scroll-spy.js";
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -49,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     colorCards('.color-card', '.card-container');
     draw('#winner', '.player');
     carrousel('.large', '.point');
+    scrollSpy('.btn-collapse-menu', '.scroll-spy');
 });
 
 
