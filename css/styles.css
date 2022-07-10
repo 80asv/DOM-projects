@@ -16,6 +16,7 @@
     --color-countdown-run: #18191f;
     --line-footer-color: #e7e7e7;
     --hover-menu: #eb0e0e;
+    --bg-dark-light: #fbfbfb;
 
     --transition-change: all .4s ease;
     --body-background: #fff;
@@ -44,6 +45,8 @@
     --color-countdown-run: var(--color-text-section);
     --line-footer-color: #3e3e3e;
     --hover-menu: #ff6e6e;
+    --bg-dark-light: rgb(34 39 48);
+
 
     --transition-change: all .4s ease;
     /* --shadow: 0 1rem 1rem var(--color-shadow); */
@@ -1195,34 +1198,46 @@ p.pause.hidden{
 
 
 .carrousel{
-    width: 90%;
+    width: 60%;
     max-width: 120em;
     padding: 2em;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     overflow: hidden;
+
+    transition: var(--transition-change);
+    border-radius: 24px;
+    background: var(--bg-dark-light);
+    box-shadow:  20px 20px 60px var(--color-shadow),
+    -20px -20px 60px var(--color-shadow);
 }
 .carrousel .large{
     width: calc(500% - 4em);
-    background-color: orange;
-
+    background-color: #2ec5ce3d;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 2em;
+    padding: 1em;
+    border-radius: 24px;
 
     transition: all .5s ease;
     transform: translateX(0%);
+    box-shadow: 0 1rem 1rem var(--color-shadow);
 }
 
 .carrousel img{
     width: calc(100% / 5 - 2em);
-    background-color: lime;
-    min-height: 10vh;
+    min-height: 30vh;
+    max-height: 45vh;
+    
+    object-fit: cover;
+    object-position: 50% 20%;
+
+    border-radius: 24px;
 }
 .carrousel .points{
     
-    background-color: red;
+    /* background-color: red; */
     padding: .4em;
     margin: 1em 0 0;
     
@@ -1231,17 +1246,21 @@ p.pause.hidden{
     justify-content: center;
     align-items: center;
     list-style: none;
+
 }
 .carrousel .point{
-    width: 1.5em;
-    height: 1.5em;
-    background-color: blue;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: var(--color-azul);
     margin: .4em;
     border-radius: 50%;
+
+    transition: all 0.1s ease-in;
 }
 
 .carrousel .point.active{
     background-color: orange;
+    transform: scale(1.3);
 }
 
 
@@ -1728,6 +1747,12 @@ p.pause.hidden{
 
     .p-winner{
         font-size: 18px;
+    }
+
+    /* <<--------------------- section 10 ---------------------------------> */
+
+    .carrousel{
+        width: 80%;
     }
 
 }
