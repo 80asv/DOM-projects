@@ -116,21 +116,27 @@
                 </a> 
 
                 <a href="#section10" class="link-section" id="digital-giveaway">
-                    <div class="icon icon-filter"><i class="fa-solid fa-ticket"></i></div>
+                    <div class="icon icon-ticket"><i class="fa-solid fa-ticket"></i></div>
                     <h3>giveaway /</h3>
                     <h3>section 10</h3>
                 </a> 
 
                 <a href="#section11" class="link-section" id="carousel">
-                    <div class="icon icon-filter"><i class="fa-solid fa-images"></i></div>
+                    <div class="icon icon-image"><i class="fa-solid fa-images"></i></div>
                     <h3>Carousel /</h3>
                     <h3>section 11</h3>
                 </a> 
 
                 <a href="#section12" class="link-section" id="smart-video-menu">
-                    <div class="icon icon-filter"><i class="fa-solid fa-film"></i></div>
+                    <div class="icon icon-film"><i class="fa-solid fa-film"></i></div>
                     <h3>Smart video /</h3>
                     <h3>section 12</h3>
+                </a> 
+
+                <a href="#section13" class="link-section" id="form-menu">
+                    <div class="icon icon-form"><i class="fa-solid fa-envelope"></i></div>
+                    <h3>Form /</h3>
+                    <h3>section 13</h3>
                 </a> 
 
 
@@ -230,6 +236,13 @@
                 <div class="icon icon-filter"><i class="fa-solid fa-film"></i></div>
                 <h3>Smart video</h3>
             </a>
+
+            <a href="#section13" class="link-section" id="form-menu" data-scroll-spy>
+
+                <div class="icon icon-form"><i class="fa-solid fa-envelope"></i></div>
+                <h3>Form</h3>
+            </a>
+
         </nav>
     </aside>
 
@@ -514,10 +527,35 @@
                 <video width="80%"  src="assets/video.mp4" muted controls loop data-smart-video></video>
             </div>
         </section>
+
+        <section class="section" data-scroll-spy id="section13">
+            <div class="container-section">
+                <div class="container-titles">
+                    <h2 class="number-section">section 13</h2>
+                    <h3 class="title-section">Form</h3>
+                </div>
+                
+                <form  class="contact">
+                    <legend>send us your comments</legend>
+                    <input type="text" name="name" placeholder="Name"  pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Only letters and empty spaces" required>
+                    <input type="email" name="email" placeholder="Email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" title="incorrect email" required>
+                    <input type="text" name="subject" placeholder="Subject" title="the subject is required" required>
+                    <textarea name="comments" cols="30" rows="10" placeholder="write your comments" data-pattern="^.{1,255}$" title="your comment should not exceed 255 characters" required></textarea>
+                    <input type="submit" value="send">
+                    <div class="container-form-loader none"><img src="assets/tail-spin.svg" alt="loading"></div>
+                    <div class="contact-form-response none">
+                        <p>the data has been sent</p>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
     <script src="js/main.js" type="module"></script>
 </body>
 </html>
+
+
+
 
 
 

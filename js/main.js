@@ -15,6 +15,7 @@ import draw from "./digital-giveaway.js";
 import carrousel from "./carrousel.js";
 import scrollSpy from "./scroll-spy.js";
 import smartVideo from "./smart-video.js";
+import formValidation from "./form-validation.js";
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -53,6 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     carrousel('.large', '.point');
     scrollSpy('.btn-collapse-menu', '.scroll-spy');
     smartVideo();
+    formValidation();
 });
 
 
