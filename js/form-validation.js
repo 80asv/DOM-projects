@@ -32,7 +32,6 @@ export default function formValidation(){
             // buscar el atributo pattern que contiene la validacion con la exp reg
             let $input = e.target,
                 pattern = $input.pattern || $input.dataset.pattern;
-                console.log(pattern);
 
             // si el input tienen atributo pattern    
             if(pattern && $input.value !== ''){
@@ -47,4 +46,22 @@ export default function formValidation(){
 
         }
     });
+
+    d.addEventListener('submit', (e ) => {
+        //e.preventDefault();
+        alert('sending form');
+
+        const $loader = d.querySelector('.contact-form-loader');
+        const $response = d.querySelector('.contact-form-response');
+
+        $loader.classList.remove('none');
+
+        setTimeout(() => {
+            $loader.classList.add('none');
+            $response.classList.remove('none');
+            $form.reset();
+            
+            setTimeout(() => {$response.classList.add('none')}, 3E3);
+        }, 3E3)
+    })
 }
