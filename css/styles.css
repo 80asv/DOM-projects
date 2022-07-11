@@ -1339,7 +1339,15 @@ p.pause.hidden{
     }
 }
 
+/* <<--------------------- section 14 --------------------------------->> */
 
+
+.container-narrator{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20%;
+}
 
 
 /* <<------------------- responsive design -------------------->> */

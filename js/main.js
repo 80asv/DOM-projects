@@ -16,6 +16,7 @@ import carrousel from "./carrousel.js";
 import scrollSpy from "./scroll-spy.js";
 import smartVideo from "./smart-video.js";
 import formValidation from "./form-validation.js";
+import narrator from "./narrator.js";
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -67,7 +68,8 @@ document.addEventListener("keydown", e =>{
 
 darkMode('.btn-darkmode-bg');
 networkStatus();
- 
+narrator();
+
  
  
  
